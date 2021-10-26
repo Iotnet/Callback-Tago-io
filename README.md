@@ -18,7 +18,7 @@ escribiremos un nombre y en el DEVICE ID pondremos el ID de nuestro dispositivo.
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git4.png?raw=true)
 
-comenara a crear nuestro device y el bucket, donde se almacenaran los datos. Despues de unos segundos, terminara y seleccionaremos CONTINUE
+comenzara a crear nuestro device y el bucket, donde se almacenaran los datos. Despues de unos segundos, terminara y seleccionaremos CONTINUE
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git5.png?raw=true)
 

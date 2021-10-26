@@ -94,6 +94,26 @@ vamos a la pestaña PAYLOAD PARSER y habilitamos la opcion en la seccion de PARS
 
 Una vez habilitado, por medio de codigo en [nodejs](https://nodejs.org/api/buffer.html) tendremos que decodificar los datos en crudo. Podemos seleccionar PARSE EXAMPLE FOR SIGFOX el cual nos ayudara a tener una idea de como leer los datos entrantes y realizar la conversion de hexadecimal a decimal.
 
+En este ejemplo, cada mensaje contiene 4 variables con el siguiente orden y formatos: 
+  - latitud
+    - tamaño : 4 bytes
+    - tipo :  flotante
+    - endianness: little endian  
+  - longitud
+    - tamaño : 4 bytes
+    - tipo :  flotante
+    - endianness: little endian    
+  - temperatura
+    - tamaño : 1 byte
+    - tipo :  entero sin signo
+  - bateria
+    - tamaño : 1 byte
+    - tipo :  entero sin signo 
+ 
+considerando lo anterior, tenemos el codigo siguiente
+
+(codigo)[https://github.com/Iotnet/Callback-Ubidots/blob/main/codigo%20ejemplo]
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git16.png?raw=true)
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git17.png?raw=true)

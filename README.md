@@ -46,6 +46,23 @@ Deberemos configurar el callback con los siguientes datos:
           *Header*         *Value*
           device           {device}
           authorization    Token generado por TAGO
+          
+      Content-type: application/json
+      Body:
+                  
+                  [{
+    "variable": "device",
+    "value": "{device}",
+    "serie": "{time}"
+},{
+    "variable": "data",
+    "value": "{data}",
+    "serie": "{time}"
+},{
+    "variable": "seqNumber",
+    "value": "{seqNumber}",
+    "serie": "{time}"
+}]
  
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git9.png?raw=true)
 

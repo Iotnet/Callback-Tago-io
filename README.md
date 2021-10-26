@@ -112,22 +112,42 @@ En este ejemplo, cada mensaje contiene 4 variables con el siguiente orden y form
  
 considerando lo anterior, tenemos el siguiente [codigo](https://github.com/Iotnet/Callback-Tago-io/blob/main/codigo%20ejemplo%20github)
 
-una vez terminamos nuestro codigo, damos clic en SAVE para guardar los cambios
+una vez terminamos nuestro codigo, damos clic en SAVE para guardar los cambios.
+
+Tago nos permite comprobar nuestro codigo y ver si hay errores o si todo esta bien. Para esto, ir a la pestaña de LIVE INSPECTOR y dar clic en el icono de PLAY
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git16.png?raw=true)
 
+con esto, por cada mensaje entrante podremos ver el resultado de nuestro codigo, tanto las variables que creamos a partir de los datos en crudo como los errores dentro de nuestro codigo.
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git17.png?raw=true)
+
+igualmente, si nos dirigimos al bucket de nuestro dispositivo, veremos las nuevas variables que se agregaron automaticamente
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git18.png?raw=true)
 
+### Dashboard
+
+Con los datos en el bucket, ahora ya podremos crear nuestro dashboard. Vamos a la seccion de DASHBOARDS y seleccionamos el icono de +
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git19.png?raw=true)
+
+le damos un nombre y damos clic en CREATE MY DASHBOARD
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git20.png?raw=true)
 
+ahora podremos agregar widgets como mapas, graficas, tablas, etc.
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git21.png?raw=true)
+
+como en este ejemplo se estan transmitiendo coordenadas, se pondra un mapa donde la variable que seleccionaremos es LOCATION
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git22.png?raw=true)
 
+Finalmente podemos agregar los widget que queramos y que muestren la informacion de nuestro dispositivo de la manera mas sencilla.
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git23.png?raw=true)
+
+Adicionalmente, podemos descargar la aplicacion apara nuestro celular y poder ver nuestros dashboards
 
 

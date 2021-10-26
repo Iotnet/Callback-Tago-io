@@ -66,17 +66,33 @@ Deberemos configurar el callback con los siguientes datos:
  
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git9.png?raw=true)
 
+Damos clic en OK. Una vez creado, podemos verificar si esta bien configurado nuestro callback. Debemos ir a los mensajes de nuestro dispositivo en backend y esperar a que se transmita un nuevo mensaje y veremos que el icono de estatus de callbackd debe ponerse de color verde, indicandonos que el dato se entrego exitosamente a la plataforma de Tago.
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git10.png?raw=true)
+
+Ahora, si nos regresamos a nuestra cuenta de Tago, podremos verificar lo anteriror. Para esto debemos ir a BUCKETS  y seleccionar el bucket de nuestro dispositivo
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git11.png?raw=true)
 
+enseguida en la pestaña de VARIABLES, veremos las tres variables del json del callback.
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git12.png?raw=true)
+
+### Decodificacion Payload
+
+En este caso, debemos decodificar los datos en crudo o hexadecimal contenidos en la variable DATA. 
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git13.png?raw=true)
 
+regresamos a la pestaña de DEVICES y seleccionamos nuestro dispositivo en TAGO
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git14.png?raw=true)
 
+vamos a la pestaña PAYLOAD PARSER y habilitamos la opcion en la seccion de PARSER SETTINGS 
+
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git15.png?raw=true)
+
+Una vez habilitado, por medio de codigo en [nodejs](https://nodejs.org/api/buffer.html) tendremos que decodificar los datos en crudo. Podemos seleccionar PARSE EXAMPLE FOR SIGFOX el cual nos ayudara a tener una idea de como leer los datos entrantes y realizar la conversion de hexadecimal a decimal.
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git16.png?raw=true)
 

@@ -110,9 +110,9 @@ En este ejemplo, cada mensaje contiene 4 variables con el siguiente orden y form
     - tamaño : 1 byte
     - tipo :  entero sin signo 
  
-considerando lo anterior, tenemos el codigo siguiente
+considerando lo anterior, tenemos el siguiente [codigo](https://github.com/Iotnet/Callback-Tago-io/blob/main/codigo%20ejemplo%20github)
 
-(codigo)[https://github.com/Iotnet/Callback-Ubidots/blob/main/codigo%20ejemplo]
+una vez terminamos nuestro codigo, damos clic en SAVE para guardar los cambios
 
 ![devkit_pinout](https://github.com/Iotnet/Callback-Tago-io/blob/main/images/tago_git16.png?raw=true)
 
